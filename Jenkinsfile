@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t iccpinfotech/iccpwebimage:$BUILD_NUMBER .'
+                sh 'docker build -t iccpinfotech/iccpgopal:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
