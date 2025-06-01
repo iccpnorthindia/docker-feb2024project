@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push iccpinfotech/iccpwebimage:$BUILD_NUMBER'
+                sh 'docker push iccpinfotech/iccpgopal:$BUILD_NUMBER'
             }
         }
 }
